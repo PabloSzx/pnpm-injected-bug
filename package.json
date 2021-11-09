@@ -1,0 +1,12 @@
+{
+  "name": "pnpm-injected-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "pnpm dlx rimraf \"**/node_modules\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

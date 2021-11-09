@@ -1,0 +1,26 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/bar:
+    specifiers: {}
+
+  packages/foo:
+    specifiers:
+      bar: workspace:^1.0.0
+    dependencies:
+      bar: file:packages/bar
+    dependenciesMeta:
+      bar:
+        injected: true
+
+packages:
+
+  file:packages/bar:
+    resolution: {directory: packages/bar, type: directory}
+    name: bar
+    version: 1.0.0
+    dev: false

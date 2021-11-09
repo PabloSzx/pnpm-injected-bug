@@ -1,0 +1,18 @@
+{
+  "name": "foo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bar": "workspace:^1.0.0"
+  },
+  "dependenciesMeta": {
+    "bar": {
+      "injected": true
+    }
+  }
+}

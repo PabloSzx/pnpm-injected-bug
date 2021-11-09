@@ -1,0 +1,98 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 3,
+    "total": 3,
+    "workspacePrefix": "C:\\Users\\PabloSz\\pnpm-injected-bug"
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "bar",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {},
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug\\packages\\bar"
+  },
+  "2 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "foo",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {},
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "dependencies": {
+        "bar": "workspace:^1.0.0"
+      },
+      "dependenciesMeta": {
+        "bar": {
+          "injected": true
+        }
+      }
+    },
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug\\packages\\foo"
+  },
+  "3 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "pnpm-injected-bug",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "clean": "pnpm dlx rimraf \"**/node_modules\""
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug"
+  },
+  "4 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "C:\\Users\\PabloSz\\.pnpm-store\\v3",
+    "virtualStoreDir": "C:\\Users\\PabloSz\\pnpm-injected-bug\\node_modules\\.pnpm"
+  },
+  "5 info pnpm": {
+    "message": "Lockfile is up-to-date, resolution step is skipped",
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug"
+  },
+  "6 debug pnpm:stats": {
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug",
+    "removed": 0
+  },
+  "7 debug pnpm:stage": {
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug",
+    "stage": "importing_started"
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "file:packages/bar",
+    "requester": "C:\\Users\\PabloSz\\pnpm-injected-bug",
+    "status": "resolved"
+  },
+  "9 debug pnpm:stats": {
+    "added": 1,
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug"
+  },
+  "10 warn pnpm:package-requester": {
+    "message": "Fetching file:packages/bar failed!",
+    "prefix": "C:\\Users\\PabloSz\\pnpm-injected-bug"
+  },
+  "11 error pnpm": {
+    "errno": -4058,
+    "code": "ENOENT",
+    "syscall": "scandir",
+    "path": "C:\\Users\\PabloSz\\pnpm-injected-bug\\packages\\foo\\packages\\bar",
+    "err": {
+      "name": "pnpm",
+      "message": "ENOENT: no such file or directory, scandir 'C:\\Users\\PabloSz\\pnpm-injected-bug\\packages\\foo\\packages\\bar'",
+      "code": "ENOENT",
+      "stack": "pnpm: ENOENT: no such file or directory, scandir 'C:\\Users\\PabloSz\\pnpm-injected-bug\\packages\\foo\\packages\\bar'"
+    }
+  }
+}
